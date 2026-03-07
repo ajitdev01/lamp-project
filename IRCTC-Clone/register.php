@@ -21,8 +21,8 @@ if (isset($_POST['register'])) {
         $mail->isSMTP();
         $mail->Host       = 'smtp.hostinger.com';
         $mail->SMTPAuth   = true;
-        $mail->Username   = 'testonly@rexvel.com';
-        $mail->Password   = 'R*9xZw8~';
+        $mail->Username   = 'Enter Your email';
+        $mail->Password   = 'Enter Your Pass';
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
         $mail->Port       = 465;
 
@@ -363,5 +363,6 @@ if (isset($_POST['register'])) {
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 
 </html>
