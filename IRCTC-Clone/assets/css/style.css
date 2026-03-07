@@ -1,0 +1,337 @@
+/* header st  */
+:root {
+  --primary: #143ceeff;
+  --primary-dark: #e95affff;
+  --primary-light: #0008ffff;
+  --secondary: #2980b9;
+  --dark: #2c3e50;
+  --light: #f8f9fa;
+  --border: #e0e0e0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f8fafc;
+  padding-top: 80px;
+  /* Increased for better spacing */
+}
+
+/* ===================================
+           CLEAN NAVBAR
+        =================================== */
+.navbar {
+  background: white !important;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+  padding: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1030;
+  /* Standard Bootstrap z-index */
+  border-bottom: 3px solid var(--primary);
+  transition: all 0.3s ease;
+}
+
+.navbar.scrolled {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Brand */
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: var(--primary-dark) !important;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 1.25rem 0;
+  text-decoration: none;
+}
+
+.navbar-brand:hover {
+  color: var(--primary) !important;
+}
+
+.navbar-brand i {
+  color: var(--primary);
+  font-size: 1.8rem;
+  transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover i {
+  transform: scale(1.1);
+}
+
+.brand-tagline {
+  font-size: 0.8rem;
+  color: #666;
+  font-weight: 500;
+  margin-left: 5px;
+}
+
+/* Navigation Links */
+.nav-link {
+  font-weight: 500;
+  color: var(--dark) !important;
+  padding: 1rem 1.2rem !important;
+  border-bottom: 3px solid transparent;
+  transition: all 0.3s ease;
+  position: relative;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: var(--primary) !important;
+  background: rgba(230, 126, 34, 0.05);
+}
+
+.nav-link.active {
+  color: var(--primary) !important;
+  border-bottom-color: var(--primary);
+  background: rgba(230, 126, 34, 0.1);
+  font-weight: 600;
+}
+
+.nav-link i {
+  margin-right: 8px;
+  font-size: 1.1rem;
+  transition: transform 0.3s ease;
+}
+
+.nav-link:hover i {
+  transform: scale(1.1);
+}
+
+/* User Section */
+.user-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* User Avatar */
+.user-avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 2px solid var(--primary);
+  object-fit: cover;
+  transition: all 0.3s ease;
+}
+
+.user-avatar:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 0 3px rgba(230, 126, 34, 0.2);
+}
+
+/* Buttons */
+.btn-login {
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 0.6rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-login:hover {
+  background: var(--primary-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(230, 126, 34, 0.3);
+  color: white;
+}
+
+.btn-admin {
+  background: var(--secondary);
+  color: white;
+  border: none;
+  padding: 0.6rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-admin:hover {
+  background: #1c5980;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(41, 128, 185, 0.3);
+  color: white;
+}
+
+/* Dropdown */
+.dropdown-menu {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  padding: 0.5rem;
+  margin-top: 10px;
+  min-width: 220px;
+  animation: fadeIn 0.2s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.dropdown-item {
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.2s ease;
+  color: var(--dark);
+  text-decoration: none;
+}
+
+.dropdown-item:hover {
+  background: rgba(230, 126, 34, 0.1);
+  color: var(--primary);
+  transform: translateX(3px);
+}
+
+.dropdown-item i {
+  width: 20px;
+  text-align: center;
+}
+
+.dropdown-divider {
+  margin: 0.5rem 0;
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-item-text {
+  padding: 0.75rem 1rem;
+}
+
+/* Mobile Responsive */
+@media (max-width: 991px) {
+  body {
+    padding-top: 70px;
+  }
+
+  .navbar-collapse {
+    background: white;
+    padding: 1rem;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    margin-top: 5px;
+    border-top: 1px solid var(--border);
+  }
+
+  .nav-link {
+    padding: 0.8rem 1rem !important;
+    border-bottom: none;
+    border-left: 3px solid transparent;
+    margin: 0.25rem 0;
+  }
+
+  .nav-link.active {
+    border-left-color: var(--primary);
+    border-bottom-color: transparent;
+  }
+
+  .user-section {
+    padding-top: 1rem;
+    border-top: 1px solid var(--border);
+    margin-top: 1rem;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .btn-login,
+  .btn-admin {
+    width: 100%;
+    margin-bottom: 0.5rem;
+    justify-content: center;
+  }
+
+  .dropdown-menu {
+    position: static !important;
+    transform: none !important;
+    width: 100%;
+    margin-top: 0.5rem;
+    box-shadow: none;
+    border: 1px solid var(--border);
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 1.4rem;
+    padding: 1rem 0;
+  }
+
+  .brand-tagline {
+    display: none;
+  }
+
+  .navbar-container {
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  body {
+    padding-top: 65px;
+  }
+
+  .navbar-brand {
+    font-size: 1.3rem;
+  }
+
+  .navbar-brand i {
+    font-size: 1.5rem;
+  }
+}
+
+/* header end */
+
+@media print {
+  .navbar,
+  footer,
+  #btns {
+    display: none !important;
+    visibility: hidden !important;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .card {
+    box-shadow: none !important;
+    border: none !important;
+  }
+}
+
+.small {
+  font-size: 0.75rem; /* readable, not too small */
+  line-height: 1.2rem;
+}
