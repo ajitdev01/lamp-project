@@ -19,8 +19,8 @@ if (isset($_POST['send'])) {
         $mail->isSMTP();
         $mail->Host       = 'smtp.hostinger.com';
         $mail->SMTPAuth   = true;
-        $mail->Username   = 'testonly@rexvel.com';
-        $mail->Password   = 'R*9xZw8~';
+        $mail->Username   = 'Enter Your Email';
+        $mail->Password   = 'Enter Your pass';
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
         $mail->Port       = 465;
 
@@ -248,5 +248,6 @@ if (isset($_POST['send'])) {
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 </body>
+
 
 </html>
