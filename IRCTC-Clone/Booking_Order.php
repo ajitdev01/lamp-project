@@ -4,8 +4,8 @@ require("./admin/assets/lib/razorpay-php/Razorpay.php"); // Ensure you have the 
 
 use Razorpay\Api\Api;
 
-$api_key = 'rzp_test_Rn5bHsJaNwbCNl';
-$api_secret = '8yLGKaoXehJ9AHJU756zAGhs';
+$api_key = 'Enter Your Api Key';
+$api_secret = 'Enter Your Secret Key';
 $api = new Api($api_key, $api_secret);
 
 // $amount = $_POST['amount'] * 100; // Amount in paise
@@ -42,3 +42,4 @@ if (isset($_POST['amount'])) {
     }
 }
 ?>
+
