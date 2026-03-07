@@ -5,8 +5,8 @@ use Razorpay\Api\Api;
 
 include "./config/config.php";  // correct DB include
 
-$api_key = 'rzp_test_Rn5bHsJaNwbCNl';
-$api_secret = '8yLGKaoXehJ9AHJU756zAGhs';
+$api_key = 'Enter Your Api key';
+$api_secret =  'Enter Your Secret key';
 $api = new Api($api_key, $api_secret);
 
 // Fetch the payment details
@@ -52,3 +52,4 @@ if ($payment->status == 'captured') {
 } else {
     echo "Payment Failed";
 }
+
