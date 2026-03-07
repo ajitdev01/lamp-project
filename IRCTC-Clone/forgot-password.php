@@ -18,8 +18,8 @@ if (isset($_POST['send'])) {
         $mail->isSMTP();
         $mail->Host       = 'smtp.hostinger.com';
         $mail->SMTPAuth   = true;
-        $mail->Username   = 'testonly@rexvel.com';
-        $mail->Password   = 'R*9xZw8~';
+        $mail->Username   = 'Enter Your gmail';
+        $mail->Password   = 'Enter Your password';
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
         $mail->Port       = 465;
 
@@ -261,5 +261,6 @@ if (isset($_POST['send'])) {
         </div>
     </div>
 </body>
+
 
 </html>
