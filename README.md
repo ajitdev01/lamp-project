@@ -15,7 +15,6 @@
 [![GitHub commits](https://img.shields.io/github/commit-activity/m/ajitdev01/lamp-project?color=brightgreen&label=commits)](https://github.com/ajitdev01/lamp-project/commits)
 
 <br/>
-
 > **A production-inspired collection of 7 full-stack web applications** built with the LAMP stack.  
 > Covering real-world use cases: railway booking, OTP auth, CRUD, messaging, library management & more.
 
