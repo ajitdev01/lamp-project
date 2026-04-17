@@ -71,6 +71,24 @@
         <div class="mx-auto mt-3" style="width: 70px; height: 4px; background: linear-gradient(90deg, #0d6efd, #6ea8fe); border-radius: 4px;"></div>
       </div>
 
+      <div class="credentials-banner rounded-4 p-3 mb-4 d-flex flex-wrap justify-content-between align-items-center gap-3">
+        <div class="d-flex align-items-center gap-3 flex-wrap">
+          <div class="bg-primary bg-opacity-10 rounded-circle p-2">
+            <i class="bi bi-envelope-fill text-primary fs-5"></i>
+          </div>
+          <div>
+            <span class="fw-semibold text-secondary small text-uppercase">System Access</span>
+            <div class="d-flex flex-wrap gap-3 mt-1">
+              <span class="badge bg-light text-dark p-2 px-3 border"><i class="bi bi-envelope me-1"></i> demo@gmail.com</span>
+              <span class="badge bg-light text-dark p-2 px-3 border"><i class="bi bi-key me-1"></i> demo@123</span>
+            </div>
+          </div>
+        </div>
+        <div class="text-muted small">
+          <i class="bi bi-shield-check me-1 text-primary"></i> Unified credentials for Admin | Librarian | Student
+        </div>
+      </div>
+
       <!-- Three equal responsive cards row: Admin, Librarian, Student -->
       <div class="row g-4 g-lg-5">
         <!-- Admin Panel Card -->
